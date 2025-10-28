@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mashghal rodainna</title>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
     <style>
         *{
-            background-color: brown;
             scroll-behavior: smooth;
             font-family:readex pro;
         }
@@ -18,7 +16,7 @@
         .buttons {
             margin: 50px;
         }
-        section a{
+        .home a{
             color: aliceblue;
             background-color: blue;
             padding: 4px 6px;
@@ -29,68 +27,369 @@
             margin: 5px;
             font-family: Readex Pro;
         }
-        section a:hover{
+        .home a:hover{
             color: blue;
             background-color: aliceblue;
             font-size: 2rem;
         }
+        body {
+            font-family: sans-serif;
+            background-image: url(wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            scroll-behavior: smooth;
+            /* transform: scale(0.75);
+            transform-origin: top left;
+            width: 133.33%; */
+        }
+        header div a {
+            color:aqua;
+            transition: 0.3s ease-in-out;
+        }
+        header div a:hover {
+            color:aliceblue;
+            transform: scale(1.2);
+        }
+        .nav {
+            font-family: Readex Pro;
+            text-decoration: none;
+            font-size: 3rem;
+            padding-left: 60px;
+        }
+        section h1 section a {
+            color: aliceblue;
+            background-color: blue;
+            transition: 0.5s ease-in-out;
+        }
+        section h1 section a:hover {
+            color: blue;
+            background-color: aliceblue;
+            transform: scale(1.3);
+        }
+        h1 {
+            font-family: Readex Pro;
+        }
+        section a img{
+            transition: 0.7s ease-in-out;
+        }
+        section a img:hover {
+            transform: scale(1.2);
+        }
+        .geet {
+            font-size: 10rem;
+        }
+        #main {
+            display: flex;
+        }
+        .paragraph {
+            font-size: 1.4rem;
+        }
+        .contuctabout {
+            font-size: 1.5rem;
+            padding: 8px 6px; 
+            display: inline-block;
+        }
+        .background2 {
+            width: 700px;
+        }
+        .floatfix {
+            float: right;
+        }
+        .photoediting {
+            font-size: 5rem;
+        }
+        .myworksview {
+            margin-top: 250px;
+            margin-bottom: 250px;
+
+        }
+        .videview {
+            border-radius: 55px; 
+            overflow: hidden;  
+            width: 230px;
+        }
+        .contucth1 {
+            font-size: 6rem;
+        }
+        .smv1 {
+            margin-right: 100px;
+        }
+        .smv2 {
+            margin-left: 100px;
+        }
+        #clothes {
+            display: flex;
+        }
+        #clothesstyle {
+            display: flex;
+        }
+        #curses {
+            display: flex;
+        }
+        header img {
+            margin-left: 40%;
+        }
+        /* responsive */
+        @media (max-width: 480px) {
+            #clothes {
+                display: block;
+            }
+            #clothesstyle {
+                display: block;
+            }
+            #curses {
+                display: block;
+            }
+            /* main */
+            .nav {
+                font-size: 15px;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-align: center;
+            }
+            .mf {
+                max-width: 200px;
+            }
+            .geet {
+                font-size: 3rem;
+                text-align: center;
+            }
+            .mf {
+                display: block;
+                margin: auto;
+            }
+            #main {
+                display: block;
+            }
+            .paragraph {
+                font-size: 0.6rem;
+            }
+            .contuctabout {
+                font-size: 0.8rem;
+                padding: 8px 6px; 
+                display: flex;
+                margin-left: 0px;
+                display: block;
+                margin: auto;
+            }
+            .othertext {
+                text-align: center;
+                margin-left: 30px;
+                float: none;
+            }
+            /* about */
+            .background2 {
+                max-width: 250px;
+                display: block;
+                margin: auto;
+                margin-right: 2000px;
+            }
+            body {
+                zoom: 180%;
+            }
+            .photoediting {
+                font-size: 2.2rem;
+            }
+            .imageview {
+                max-width: 130px;
+                margin-bottom: 20px;
+                align-self: center;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            .myworksview {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .videview {
+                width: 180px;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin-bottom: 30px;
+            }
+            .contucth1 {
+                font-size: 2.2rem;
+            }
+            .smv1 {
+                margin-right: 0px;
+                margin-bottom: 200px;
+            }
+            .smv2 {
+                margin-left: 0px;
+                margin-bottom: 200px;
+            }
+            .smv {
+                margin-bottom: 200px;
+            }
+            .logo {
+                width: 248px;
+                margin-right: 250px;
+            }
+            header img {
+                max-width: 150px;
+                margin-left: 17%;
+            }
+            .works {
+                display: block;
+            }
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* يمنع التمرير الأفقي */
+            }
+
+            * {
+            box-sizing: border-box; /* يخلي المقاسات دقيقة */
+            }
+
+            .container {
+            max-width: 100%;
+            margin: 0 auto;
+            }
+
     </style>
+    <title>meshghal rodina</title>
 </head>
 <body>
+    <header>
+        <img src="1.jpg" width="300px">
+        <hr width="50%">
+    </header>
     <section align="center" class="home">
-        <img src="assets/13.jpg" width="300px">
+        <img src="logo.png" align="center" class="logo" width="300px">
         <br>
         <section class="buttons">
-        <a href="#about" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تعريف</a>
-        <a href="#clothesstyle" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تصميم ازياء</a>
-        <a href="#" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> كي بالبخار</a>
-        <br>
-        <a href="#" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تصميم بدل</a>
-        <a href="#" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> خياطة ملابس</a>
-        <br>
-        <a href="#" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> كورسات تعليم خياطة</a>
-        </section>
+            <a href="#main" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تعريف</a>
+            <br>
+            <a href="#contuct" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تواصل</a>
+            <br>
+            <a href="#clothesstyle" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> تصميم-ازياء</a>
+            <br>
+            <a href="#clothes" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> خياطة-ملابس</a>
+            <br>
+            <a href="#curses" class="works" style="font-family: Readex Pro; text-decoration-line: none; border-radius: 25px; width:fit-content ;box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -webkit-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75); -moz-box-shadow: 10px 5px 16px 4px rgba(0,0,0,0.75);"> كورسات-تعليم-خياطة</a>
+            <hr>
+            </section>
     </section>
-    <section id="about" class="about">
-        <div style="background-image: url(background.svg);" >
-            <hr>
-            <img class="background2" src="assets/10.jpg" width="300px">
-            <div style="float: right;" class="othertext">
-                <h1 class="geet" style="
-                font-family: Readex Pro;
-                color: aqua;
-                margin-right: 50px;
-                scale: 1.1;
-                ">
-                تعريف
-                <p class="paragraph" style=" color: whitesmoke;">اهلا و سهلا بكم</p>
-                <p class="paragraph" style=" color: whitesmoke;">مشغل رودينا لتصميم وتنفيذ  الأزياء</p>
-                <p class="paragraph" style=" color: whitesmoke;">و تعليم الخياطة والتفصيل</p>
-                <p class="paragraph" style=" color: whitesmoke;">يوجد لدينا تصميم فساتين و جميع انواع الزي الموحد</p>
-
-
-                </h1>
-            </div>
-            <hr>
+    <section class="main" id="main">
+        <img src="photo 1.png" class="mf" width="700px">
+        <div class="othertext">
+            <h1 class="geet" style="
+            font-family: Readex Pro;
+            color: aqua;
+            font-weight: 700;
+            margin-right: 50px;
+            scale: 1.1;
+            ">
+            نبذة
+            <p class="paragraph" style= "color: aquamarine;">اهلا وسهلا بكم</p>
+            <p class="paragraph" style= "color: aquamarine;">مشغل رودينا لتصميم و تنفيذ الأزياء</p>
+            <p class="paragraph" style= "color: aquamarine;">و تعليم الخياطة و التفصيل</p>
+            <p class="paragraph" style= "color: aquamarine;">يوجد تصميم جميع انواع الملابس</p>
+            <p class="paragraph" style= "color: aquamarine;">يوجد تصميم جميع انواع الزي الموحد يونيفورم</p>
+            <p class="paragraph" style= "color: aquamarine;">يوجد كورسات للمبتدأين</p>
+            </h1>
         </div>
     </section>
-    <section id="clothesstyle" class="clothesstyle">
-        <div style="background-image: url(background.svg);" >
-            <img class="background2" src="assets/6.jpg" width="300px">
-            <div style="float: right;" class="othertext">
-                <h1 class="geet" style="
-                font-family: Readex Pro;
-                color: aqua;
-                margin-right: 50px;
-                scale: 1.1;
-                ">
-                تصميم ازياء
-                <p class="paragraph" style=" color: whitesmoke;"> لدينا موظفين بارعين, يبرعون في تصميم الأزياء</p>
-                <p class="paragraph" style=" color: whitesmoke;"> و التصميم هيبقى على مقاسك بالظبط</p>
-                </h1>
-            </div>
-            <hr>
+    <br>
+    <hr style="width: 90%;">
+    <br>
+    <section id="clothesstyle">
+        <img src="photo 2.png" class="mf" width="700px">
+        <div class="othertext">
+            <h1 class="geet" style="
+            font-family: Readex Pro;
+            color: aqua;
+            font-weight: 700;
+            margin-right: 50px;
+            scale: 1.1;
+            ">
+            تصميم الأزياء
+            <p class="paragraph" style= "color: aquamarine;">رجالي,حريمي,شبابي,اطفالي,بدل,فساتين,جلباب</p>
+            <p class="paragraph" style= "color: aquamarine;"> </p>
+            </h1>
         </div>
     </section>
+    <br>
+    <hr style="width: 90%;">
+    <br>
+    <section id="clothes">
+        <img src="10.jpg" style="border-radius: 25px;" class="mf" width="700px">
+        <div class="othertext">
+            <h1 class="geet" style="
+            font-family: Readex Pro;
+            color: aqua;
+            font-weight: 700;
+            margin-right: 50px;
+            scale: 1;
+            ">
+            خياطة ملابس
+            <p class="paragraph" style= "color: aquamarine;">خياطة و تصليح جميع مشاكل الملابس </p>
+            <p class="paragraph" style= "color: aquamarine;"> </p>
+            </h1>
+        </div>
+    </section>
+    <br>
+    <hr style="width: 90%;">
+    <br>
+    <section id="curses">
+        <img src="photo 2.png" class="mf" width="700px">
+        <div class="othertext">
+            <h1 class="geet" style="
+            font-family: Readex Pro;
+            color: aqua;
+            font-weight: 700;
+            margin-right: 50px;
+            scale: 1;
+            ">
+            كورسات للمبتدأين
+            <p class="paragraph" style= "color: aquamarine;"> كورسات لتعليم الخياطة للمبتدأين حتى الأحتراف</p>
+            <p class="paragraph" style= "color: aquamarine;"> تعلم الحرفة في وقت قصير</p>
+            </h1>
+        </div>
+    </section>
+    <section id="curses">
+        <img src="front.png" class="mf" width="600px">
+        <div class="othertext">
+            <h1 class="geet" style="
+            font-family: Readex Pro;
+            color: aqua;
+            font-weight: 700;
+            margin-right: 50px;
+            scale: 1;
+            ">
+         العنوان
+            <p class="paragraph" style= "color: aquamarine;"> كورسات لتعليم الخياطة للمبتدأين حتى الأحتراف</p>
+            <p class="paragraph" style= "color: aquamarine;"> تعلم الحرفة في وقت قصير</p>
+            </h1>
+        </div>
+    </section>
+    <section id="contuct">
+        <hr>
+        <h1 class="contucth1" align="center" style="color: aqua;" id="contuct">تواصل مع الأدارة </h1>
+        <div align="center" style="margin-top: 125px; margin-bottom: 125px;">
+            <a class="smv1" href="https://www.facebook.com/share/1FYhYuiiZA/?mibextid=wwXlfr" target="_blank" class="sm"><img src="facebook.png" width="90"></a>
+            <a class="smv" href="https://www.facebook.com/share/1BbLmwzc2k/?mibextid" target="_blank" class="sm"><img src="facebook.png" width="90"></a>
+            <a class="smv2" href="https://www.tiktok.com/@mahmomdalfysh?_t=ZS-90p7r1CAjcT&_r=1/" target="_blank" class="sm"><img src="tiktok.png" width="90"></a>
+            <a class="smv2" href="https://chat.whatsapp.com/K7LZxpLtts0HAkhTuUDRmC?mode=wwc" target="_blank" class="sm"><img src="whatsapp.png" width="150"></a>
+
+        </div>
+        <h1 class="contucth1" align="center" style="color: aqua;" id="contuct"> تابع صفحات المحل</h1>
+        <div align="center" style="margin-top: 125px; margin-bottom: 125px;">
+            <a class="smv1" href="https://www.facebook.com/share/1AG2AefSyE/?mibextid" target="_blank" class="sm"><img src="facebook.png" width="90"></a>
+            <a class="smv" href="https://t.me/+ZbvS9MGcQq9kMGY0" target="_blank" class="sm"><img src="Telegram_2019_Logo.svg.png" width="90"></a>
+            <a class="smv2" href="https://www.facebook.com/share/1MrB8vKPak/" target="_blank" class="sm"><img src="tiktok.png" width="90"></a>
+            <a class="smv2" href="https://www.fac.com/share/1MrB8vKPak/" target="_blank" class="sm"><img src="snapchat-logo-on-transparent-isolated-background-free-vector.png" width="110"></a>
+        </div>
+        <hr style="color: white;">
+    </section>
+
+    <footer>
+        <p>Mustafa Ashour</p>
+    </footer>
 </body>
 </html>
+
+
